@@ -1,0 +1,28 @@
+{
+  "name": "testp2p",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R9295/testp2p.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/R9295/testp2p/issues"
+  },
+  "homepage": "https://github.com/R9295/testp2p#readme",
+  "dependencies": {
+    "libp2p": "^0.27.3",
+    "libp2p-bootstrap": "^0.10.4",
+    "libp2p-kad-dht": "^0.18.5",
+    "libp2p-mdns": "^0.13.3",
+    "libp2p-tcp": "^0.14.4",
+    "libp2p-webrtc-star": "^0.17.7",
+    "libp2p-websockets": "^0.13.5"
+  }
+}
