@@ -23,6 +23,7 @@
     "libp2p-mdns": "^0.13.3",
     "libp2p-tcp": "^0.14.4",
     "libp2p-webrtc-star": "^0.17.7",
-    "libp2p-websockets": "^0.13.5"
+    "libp2p-websockets": "^0.13.5",
+    "peer-info": "^0.17.5"
   }
 }
