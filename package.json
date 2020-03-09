@@ -19,6 +19,7 @@
   "dependencies": {
     "libp2p": "^0.27.3",
     "libp2p-bootstrap": "^0.10.4",
+    "libp2p-gossipsub": "^0.2.4",
     "libp2p-kad-dht": "^0.18.5",
     "libp2p-mdns": "^0.13.3",
     "libp2p-tcp": "^0.14.4",
