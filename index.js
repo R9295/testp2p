@@ -9,7 +9,7 @@ const Gossipsub = require("libp2p-gossipsub");
 const SECIO = require("libp2p-secio");
 const Mplex = require("libp2p-mplex");
 PeerInfo.create().then(p => {
-  p.multiaddrs.add(multiaddr("/ip4/127.0.0.1/tcp/20002"));
+  p.multiaddrs.add(multiaddr("/ip4/0.0.0.0/tcp/0"));
   libp2p
     .create({
       peerInfo: p,
@@ -41,9 +41,7 @@ PeerInfo.create().then(p => {
       node.on("peer:discovery", peer =>
         console.log("Discovered:", peer.id.toB58String())
       );
-      setInterval(() => {
-        console.log(node.peerStore.peers);
-      }, 2000);
+      node.peerInfo.multiaddrs.forEach(ma => console.log(ma.toString()));
       await node.start();
     });
 });
