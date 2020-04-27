@@ -18,7 +18,7 @@ const createNode = async () => {
     config: {
       peerDiscovery: {
         mdns: {
-          interval: 20e3,
+          interval: 1000,
           enabled: true
         }
       }
