@@ -6,7 +6,8 @@ const websocket = require("libp2p-websockets");
 const PeerInfo = require("peer-info");
 const multiaddr = require("multiaddr");
 const Gossipsub = require("libp2p-gossipsub");
-
+const SECIO = require("libp2p-secio");
+const Mplex = require("libp2p-mplex");
 PeerInfo.create().then(p => {
   p.multiaddrs.add(multiaddr("/ip4/127.0.0.1/tcp/20002"));
   libp2p
@@ -32,7 +33,7 @@ PeerInfo.create().then(p => {
             enabled: true,
             // dont process for messages that this node sends
             emitSelf: false
-          },
+          }
         }
       }
     })
@@ -41,8 +42,8 @@ PeerInfo.create().then(p => {
         console.log("Discovered:", peer.id.toB58String())
       );
       setInterval(() => {
-        console.log(node.peerStore.peers)
-      }, 2000)
+        console.log(node.peerStore.peers);
+      }, 2000);
       await node.start();
     });
 });
