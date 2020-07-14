@@ -17,16 +17,16 @@
   },
   "homepage": "https://github.com/R9295/testp2p#readme",
   "dependencies": {
-    "libp2p": "^0.27.3",
+    "libp2p": "^0.28.5",
     "libp2p-bootstrap": "^0.10.4",
-    "libp2p-gossipsub": "^0.2.4",
-    "libp2p-kad-dht": "^0.18.5",
+    "libp2p-gossipsub": "^0.2.6",
+    "libp2p-kad-dht": "^0.18.7",
     "libp2p-mdns": "^0.13.3",
     "libp2p-mplex": "^0.9.5",
-    "libp2p-secio": "^0.12.4",
-    "libp2p-tcp": "^0.14.4",
+    "libp2p-secio": "^0.12.6",
+    "libp2p-tcp": "^0.14.5",
     "libp2p-webrtc-star": "^0.17.7",
-    "libp2p-websockets": "^0.13.5",
+    "libp2p-websockets": "^0.13.6",
     "peer-info": "^0.17.5"
   }
 }
